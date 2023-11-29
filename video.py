@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 
 
-def main(name_model: str = "FastSAM-x.pt", video_source: int = 0, prompt: str = "a dog") -> None:
+def main(name_model: str = "FastSAM-x.pt", video_source: int = 0, prompt: str = "a human") -> None:
     model = FastSAM("./weights/"+name_model)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
